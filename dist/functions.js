@@ -1,4 +1,5 @@
 function person(name, age) {
-    return `Meu nome é ${name}, e minha idade é ${idade}`;
+    return `Meu nome é ${name}, e minha idade é ${age}`;
 }
-person("alexandre", 39);
+console.log(person("alexandre", 39));
+;
