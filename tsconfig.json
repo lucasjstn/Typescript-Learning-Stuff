@@ -5,5 +5,5 @@
     "rootDir": "./src",
     "module": "commonjs"
   },
-  "exclude": ["beforeSeptember2022"]
+  "exclude": ["past-studied-files"]
 }
