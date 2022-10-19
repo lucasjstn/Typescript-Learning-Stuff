@@ -16,7 +16,7 @@
   \*******************************/
 /***/ ((__unused_webpack_module, exports) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Person = void 0;\nclass Person {\n    constructor() {\n        this.myName = \"Lucas\";\n    }\n    info() {\n        return `${this.myName}`;\n    }\n}\nexports.Person = Person;\n\n\n//# sourceURL=webpack://todo/./src/classes/Person.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Person = void 0;\nclass Person {\n    constructor() {\n        this.myName = \"Lucas\";\n    }\n    setMyName(name) {\n        this.myName = name;\n    }\n    info() {\n        return `${this.myName}`;\n    }\n}\nexports.Person = Person;\n\n\n//# sourceURL=webpack://todo/./src/classes/Person.ts?");
 
 /***/ }),
 
