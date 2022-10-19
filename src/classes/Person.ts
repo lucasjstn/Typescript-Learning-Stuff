@@ -1,15 +1,19 @@
 export class Person {
-    private myName: string = "Lucas Pereira de Oliveira"
+    private _myName: string = "Lucas Pereira de Oliveira"
 
-    setMyName(myName: string) {
-        this.myName = myName;
+    // setMyName(myName: string) {
+    //     this.myName = myName;
+    // }
+
+    set myName(myName: string) {
+        this._myName = myName;
     }
 
-    getMyName(): string {
-        return this.myName;
-    }
+    // getMyName(): string {
+    //     return this.myName;
+    // }
 
-    info(): string {
-        return `${this.myName}`
+    get myName() {
+        return this._myName;
     }
 }

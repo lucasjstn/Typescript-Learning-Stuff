@@ -16,7 +16,7 @@
   \*******************************/
 /***/ ((__unused_webpack_module, exports) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Person = void 0;\nclass Person {\n    constructor() {\n        this.myName = \"Lucas Pereira de Oliveira\";\n    }\n    setMyName(myName) {\n        this.myName = myName;\n    }\n    getMyName() {\n        return this.myName;\n    }\n    info() {\n        return `${this.myName}`;\n    }\n}\nexports.Person = Person;\n\n\n//# sourceURL=webpack://todo/./src/classes/Person.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Person = void 0;\nclass Person {\n    constructor() {\n        this._myName = \"Lucas Pereira de Oliveira\";\n    }\n    // setMyName(myName: string) {\n    //     this.myName = myName;\n    // }\n    set myName(myName) {\n        this._myName = myName;\n    }\n    // getMyName(): string {\n    //     return this.myName;\n    // }\n    get myName() {\n        return this._myName;\n    }\n}\nexports.Person = Person;\n\n\n//# sourceURL=webpack://todo/./src/classes/Person.ts?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
   \**********************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst Person_1 = __webpack_require__(/*! ./classes/Person */ \"./src/classes/Person.ts\");\nconst p = new Person_1.Person();\np.setMyName(\"JOAO\");\nconsole.log(p.info());\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst Person_1 = __webpack_require__(/*! ./classes/Person */ \"./src/classes/Person.ts\");\nconst p = new Person_1.Person();\n// p.setMyName(\"JOAO\")\np.myName = \"Aluisio\";\n// console.log(p.getMyName());\nconsole.log(p.myName);\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
 
 /***/ })
 
