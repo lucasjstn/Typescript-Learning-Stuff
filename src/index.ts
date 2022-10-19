@@ -1,9 +1,9 @@
-//pra criar um generics com union types a sintaxe se torna essa
+//pra criar um  valor padrão adiciona um operador = e o tipo desejado
 
-function person<T extends number | string>(data: T) {
+function person<T extends number | string = string>(data: T) {
     return data;
 }
-
-const p = person(38)
+//voce consegue colocar um tipo numero também como especificado no union type porém ao passr o mouse o parametro pedido sera do tipo padrao, no caso string
+const p = person('2')
 
 console.log(p);
