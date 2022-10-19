@@ -1,7 +1,7 @@
 export class Person {
     readonly myName: string = "Lucas";
 
-    setMyName(name: string) {
+    constructor(name: string) {
         this.myName = name;
     }
 
