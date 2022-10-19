@@ -26,7 +26,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
   \**********************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst Person_1 = __webpack_require__(/*! ./classes/Person */ \"./src/classes/Person.ts\");\nconst p = new Person_1.Person();\nconsole.log(p.info());\np.myName = 'sandra'; //Cannot assign to 'myName' because it is a read-only property.\nconsole.log(p.info());\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst Person_1 = __webpack_require__(/*! ./classes/Person */ \"./src/classes/Person.ts\");\nconst p = new Person_1.Person();\np.myName = 'sifude';\nconsole.log(p.info());\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
 
 /***/ })
 
