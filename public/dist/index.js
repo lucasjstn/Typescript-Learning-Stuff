@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("function person(data) {\n    return data;\n}\nconst p = person(38);\nconsole.log(p);\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
+eval("//pra criar um generics com union types a sintaxe se torna essa\nfunction person(data) {\n    return data;\n}\nconst p = person(38);\nconsole.log(p);\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
 
 /***/ })
 
