@@ -16,7 +16,7 @@
   \*******************************/
 /***/ ((__unused_webpack_module, exports) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Person = void 0;\nclass Person {\n    constructor() {\n        this.age = 23;\n    }\n    //se criar um metodo estatico e chamar com this uma propriedade estatica na mesma classe ele deixa\n    //mas ao acessar uma propriedade nao estatica ele reclama\n    static info() {\n        return `${this.myName}`;\n    }\n}\nexports.Person = Person;\nPerson.myName = \"Aluisio da Cunha\";\n\n\n//# sourceURL=webpack://todo/./src/classes/Person.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Person = void 0;\nclass Person {\n    //se criar um metodo estatico e chamar com this uma propriedade estatica na mesma classe ele deixa\n    //mas ao acessar uma propriedade nao estatica ele reclama\n    info() {\n        return `${this.name} `;\n    }\n}\nexports.Person = Person;\n\n\n//# sourceURL=webpack://todo/./src/classes/Person.ts?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexpo
   \**********************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst Person_1 = __webpack_require__(/*! ./classes/Person */ \"./src/classes/Person.ts\");\n//atributos e metodos estaticos podem ser acessados sem precisar instanciar\n// const p = new Person()\n// console.log(p.myName); //Property 'myName' does not exist on type 'Person'. Did you mean to access the static member 'Person.myName' instead\nPerson_1.Person.myName = 'asdasd';\nconst p = new Person_1.Person();\nconsole.log(p.info());\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst Person_1 = __webpack_require__(/*! ./classes/Person */ \"./src/classes/Person.ts\");\nconst p = new Person_1.Person();\nconsole.log(p.info());\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
 
 /***/ })
 
