@@ -1,9 +1,5 @@
 export class Person {
-    readonly myName: string = "Lucas";
-
-    constructor(name: string) {
-        this.myName = name;
-    }
+    private myName: string = "Lucas";
 
     info(): string {
         return `${this.myName}`
