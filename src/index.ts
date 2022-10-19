@@ -1,5 +1,20 @@
-import { Person } from "./classes/Person";
+//criar uma interface
 
-const p = new Person();
+interface UserInterface {
+    name: string,
+    age: number,
+    data: string[]
+}
 
-console.log(p.info());
+//criar um objeto
+
+const person: UserInterface = {
+    name: "ALexandre",
+    age: 39,
+    data: ['alexandre', 'tete', 'dificil']
+};
+
+//problema: no data não sabemos o tipo que vamos trabalhar, e o generics soluciona isso
+
+
+console.log(person);
