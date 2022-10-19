@@ -6,4 +6,8 @@ export class Person {
         this.name = name;
         this.age = age;
     }
+
+    info(): string {
+        return `Meu nome é ${this.name}, e minha idade é de ${this.age}`
+    }
 }

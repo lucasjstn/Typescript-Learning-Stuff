@@ -1,3 +1,5 @@
-import { name } from "./teste";
+import { Person } from "./classes/Person";
 
-console.log(name);
+const person = new Person('lucas', 23);
+
+console.log(person.info());
