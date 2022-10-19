@@ -7,6 +7,6 @@ export class Person {
 
     //mas ao acessar uma propriedade nao estatica ele reclama
     static info(): string {
-        return `${this.myName} and ${this.age}`;
+        return `${this.myName}`;
     }
 }

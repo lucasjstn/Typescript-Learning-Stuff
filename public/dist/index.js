@@ -16,7 +16,7 @@
   \*******************************/
 /***/ ((__unused_webpack_module, exports) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Person = void 0;\nclass Person {\n    constructor() {\n        this.age = 23;\n    }\n    //se criar um metodo estatico e chamar com this uma propriedade estatica na mesma classe ele deixa\n    //mas ao acessar uma propriedade nao estatica ele reclama\n    static info() {\n        return `${this.myName} and ${this.age}`;\n    }\n}\nexports.Person = Person;\nPerson.myName = \"Aluisio da Cunha\";\n\n\n//# sourceURL=webpack://todo/./src/classes/Person.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Person = void 0;\nclass Person {\n    constructor() {\n        this.age = 23;\n    }\n    //se criar um metodo estatico e chamar com this uma propriedade estatica na mesma classe ele deixa\n    //mas ao acessar uma propriedade nao estatica ele reclama\n    static info() {\n        return `${this.myName}`;\n    }\n}\nexports.Person = Person;\nPerson.myName = \"Aluisio da Cunha\";\n\n\n//# sourceURL=webpack://todo/./src/classes/Person.ts?");
 
 /***/ }),
 
