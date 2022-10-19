@@ -1,5 +1,5 @@
 export class Person {
-    protected myName: string = "Lucas";
+    private myName: string = "Lucas";
 
     info(): string {
         return `${this.myName}`
