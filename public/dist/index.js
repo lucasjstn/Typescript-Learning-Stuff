@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("//pra criar um  valor padrão adiciona um operador = e o tipo desejado\nfunction person(data) {\n    return data;\n}\n//voce consegue colocar um tipo numero também como especificado no union type porém ao passr o mouse o parametro pedido sera do tipo padrao, no caso string\nconst p = person('2');\nconsole.log(p);\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
+eval("//criar uma classe com o Person T\nclass Person {\n}\nconst p = new Person();\np.data = {\n    name: \"Lucas\",\n    age: 239,\n};\nconsole.log(p.data);\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
 
 /***/ })
 

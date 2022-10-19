@@ -1,9 +1,21 @@
-//pra criar um  valor padrão adiciona um operador = e o tipo desejado
-
-function person<T extends number | string = string>(data: T) {
-    return data;
+//criar uma interface onde a pro name tem que ser string e age number
+interface UserInterface {
+    name: string,
+    age: number
 }
-//voce consegue colocar um tipo numero também como especificado no union type porém ao passr o mouse o parametro pedido sera do tipo padrao, no caso string
-const p = person('2')
 
-console.log(p);
+
+//criar uma classe com o Person T
+class Person<T> {
+    public data: T;
+}
+
+
+const p = new Person<UserInterface>();
+
+p.data = {
+    name: "Lucas",
+    age: 239,
+}
+
+console.log(p.data);
