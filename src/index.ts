@@ -1,7 +1,7 @@
-function person(data: string) {
+function person<T>(data: T) {
     return data;
 }
 
-const p = person("nome")
+const p = person<string>(38)
 
 console.log(p);

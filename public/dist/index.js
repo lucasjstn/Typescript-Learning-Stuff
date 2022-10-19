@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("function person(data) {\n    return data;\n}\nconst p = person(\"nome\");\nconsole.log(p);\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
+eval("function person(data) {\n    return data;\n}\nconst p = person(38);\nconsole.log(p);\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
 
 /***/ })
 
