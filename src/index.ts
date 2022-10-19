@@ -1,3 +1,7 @@
-import { name } from "./teste";
+import { Person } from "./classes/Person";
 
-console.log(name);
+const p = new Person()
+console.log(p.info());
+
+p.myName = 'sandra' //Property 'myName' is protected and only accessible within class 'Person' and its subclasses
+console.log(p.info());
