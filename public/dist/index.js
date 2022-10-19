@@ -7,15 +7,16 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/classes/Person.ts":
 /*!*******************************!*\
   !*** ./src/classes/Person.ts ***!
   \*******************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, exports) => {
 
-eval("throw new Error(\"Module parse failed: Unterminated template (7:30)\\nFile was processed with these loaders:\\n * ./node_modules/ts-loader/index.js\\nYou may need an additional loader to handle the result of these loaders.\\n|     //se criar um metodo estatico e chamar com this uma propriedade estatica na mesma classe ele deixa\\n|     static info() {\\n>         return `${this.myName};\\n|     }\\n| };\");\n\n//# sourceURL=webpack://todo/./src/classes/Person.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Person = void 0;\nclass Person {\n    constructor() {\n        this.age = 23;\n    }\n    //se criar um metodo estatico e chamar com this uma propriedade estatica na mesma classe ele deixa\n    //mas ao acessar uma propriedade nao estatica ele reclama\n    static info() {\n        return `${this.myName} and ${this.age}`;\n    }\n}\nexports.Person = Person;\nPerson.myName = \"Aluisio da Cunha\";\n\n\n//# sourceURL=webpack://todo/./src/classes/Person.ts?");
 
 /***/ }),
 
@@ -25,7 +26,6 @@ eval("throw new Error(\"Module parse failed: Unterminated template (7:30)\\nFile
   \**********************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-"use strict";
 eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst Person_1 = __webpack_require__(/*! ./classes/Person */ \"./src/classes/Person.ts\");\n//atributos e metodos estaticos podem ser acessados sem precisar instanciar\n// const p = new Person()\n// console.log(p.myName); //Property 'myName' does not exist on type 'Person'. Did you mean to access the static member 'Person.myName' instead\nPerson_1.Person.myName = 'asdasd';\nconst p = new Person_1.Person();\nconsole.log(p.info());\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
 
 /***/ })
