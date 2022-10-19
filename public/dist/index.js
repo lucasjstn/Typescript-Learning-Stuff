@@ -16,7 +16,7 @@
   \*******************************/
 /***/ ((__unused_webpack_module, exports) => {
 
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Person = void 0;\nclass Person {\n    constructor(name, age) {\n        this.name = name;\n        this.age = age;\n    }\n    info() {\n        return `Meu nome é ${this.name}, e minha idade é de ${this.age}`;\n    }\n}\nexports.Person = Person;\n\n\n//# sourceURL=webpack://todo/./src/classes/Person.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Person = void 0;\nclass Person {\n    constructor(name, age) {\n        this.name = name;\n        this.age = age;\n    }\n    info() {\n        return `Meu nome é ${this.name}, e minha idade é de ${this.age}`;\n    }\n}\nexports.Person = Person;\n//vai sair tudo undefined no terminal\n// export class Person {\n//     constructor(name: string, age: number | string) { }\n//     info(): string {\n//         return `Meu nome é ${this.name}, e minha idade é de ${this.age}`\n//     }\n// }\n\n\n//# sourceURL=webpack://todo/./src/classes/Person.ts?");
 
 /***/ }),
 
