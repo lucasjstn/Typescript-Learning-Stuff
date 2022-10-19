@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("//criar uma interface\n//criar um objeto\nconst person = {\n    name: \"ALexandre\",\n    age: 39,\n    data: ['alexandre', 'tete', 'dificil']\n};\n//problema: no data não sabemos o tipo que vamos trabalhar, e o generics soluciona isso\nconsole.log(person);\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
+eval("function person(data) {\n    return data;\n}\nconst p = person(\"nome\");\nconsole.log(p);\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
 
 /***/ })
 
