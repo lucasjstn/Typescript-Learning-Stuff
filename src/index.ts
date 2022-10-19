@@ -1,3 +1,5 @@
-import { name } from "./teste";
+import { Person } from "./classes/Person";
 
-console.log(name);
+const p = new Person();
+p.setMyName("JOAO")
+console.log(p.info());
