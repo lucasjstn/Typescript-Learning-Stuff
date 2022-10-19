@@ -1,25 +1,14 @@
-//criar uma interface onde a pro name tem que ser string e age number
-interface UserInterface {
-    name: string,
-    age: number
-}
+//sinal de exclamação no final admite que o tipo da variavel não inclui o tipo nulo
 
+const form = document.querySelector('form')!;
 
-//criar uma classe com o Person T
-class Person<T> {
-    public data: T;
-}
+// const link = document.querySelector('a')!;
 
-class Person1 extends Person<UserInterface> {
-    public data: UserInterface;
-}
+//com isso o elemento fica generico
+const link = document.querySelector('my-link');
 
-//agora nao precisa do <UserInterface>
-const p = new Person1();
+//qual o problema de trabalhar com o sinal de exclamação ou sem
+link.addEventListener('click', () => {
+    console.log("CLick");
 
-p.data = {
-    name: "Lucas",
-    age: '239',
-}
-
-console.log(p.data);
+})

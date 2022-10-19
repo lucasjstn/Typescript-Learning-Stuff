@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("//criar uma classe com o Person T\nclass Person {\n}\nclass Person1 extends Person {\n}\n//agora nao precisa do <UserInterface>\nconst p = new Person1();\np.data = {\n    name: \"Lucas\",\n    age: '239',\n};\nconsole.log(p.data);\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
+eval("//sinal de exclamação no final admite que o tipo da variavel não inclui o tipo nulo\nconst form = document.querySelector('form');\n// const link = document.querySelector('a')!;\n//com isso o elemento fica generico\nconst link = document.querySelector('my-link');\n//qual o problema de trabalhar com o sinal de exclamação ou sem\nlink.addEventListener('click', () => {\n    console.log(\"CLick\");\n});\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
 
 /***/ })
 
