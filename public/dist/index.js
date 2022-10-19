@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("//criar uma classe com o Person T\nclass Person {\n}\nconst p = new Person();\np.data = {\n    name: \"Lucas\",\n    age: 239,\n};\nconsole.log(p.data);\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
+eval("//criar uma classe com o Person T\nclass Person {\n}\nclass Person1 extends Person {\n}\n//agora nao precisa do <UserInterface>\nconst p = new Person1();\np.data = {\n    name: \"Lucas\",\n    age: '239',\n};\nconsole.log(p.data);\n\n\n//# sourceURL=webpack://todo/./src/index.ts?");
 
 /***/ })
 
