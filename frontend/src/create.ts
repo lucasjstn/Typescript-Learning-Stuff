@@ -7,7 +7,7 @@ function create() {
         user: {
             firstName: 'asdfsd',
             lastName: 'sdfsdf',
-            email: 'asdfasdf',
+            email: 'asdfasdf@hotmail.com',
             password: 'sdfsdaf',
         },
         createUser: async function () {
@@ -16,7 +16,7 @@ function create() {
                 const { data } = await http.post("/user/create", this.user);
                 console.log(data);
             } catch (error) {
-                console.log(error);
+                console.log(error?.response?.data);
             }
         },
     };
