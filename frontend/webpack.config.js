@@ -1,24 +1,26 @@
-const path = require('path');
+const path = require("path");
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
 module.exports = {
   mode: process.env.NODE_ENV,
+  plugins: [new NodePolyfillPlugin()],
   entry: {
-    index: ['./src/index.ts']
+    index: ["./src/index.ts"],
   },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: "ts-loader",
         exclude: /node_modules/,
       },
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: [".tsx", ".ts", ".js"],
   },
   output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'public', 'dist'),
+    filename: "[name].js",
+    path: path.resolve(__dirname, "public", "dist"),
   },
 };

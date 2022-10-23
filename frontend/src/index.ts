@@ -1,5 +1,10 @@
-import { name } from "./create";
+import create from "./create";
+import "alpinejs";
 
-const names = "Lucsa";
+declare global {
+   interface Window {
+      create: any;
+   }
+}
 
-// console.log(name);
+window.create = create;
