@@ -17,10 +17,19 @@
     <div x-data="create()">
       <form x-on:submit.prevent="createUser" action="">
         <input type="text" name="firstName" x-model="user.firstName" />
+        <span id="error-firsName"></span>
+
         <input type="text" name="lastName" x-model="user.lastName" />
+        <span id="error-firsName"></span>
+
         <input type="text" name="email" x-model="user.email" />
+        <span id="error-firsName"></span>
+
         <input type="text" name="password" x-model="user.password" />
+        <span id="error-firsName"></span>
+
         <input type="submit" />
+        <span id="error-firsName"></span>
       </form>
     </div>
 
