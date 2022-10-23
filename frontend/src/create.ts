@@ -15,11 +15,13 @@ function create() {
                 console.log(this.user);
                 const { data } = await http.post("/user/create", this.user);
                 console.log(data);
-            } catch (error) {
-                const errors = error.response?.data.errors;
+            } catch (error: any) {
+                const errors = error?.response?.data?.errors;
                 if (errors) {
-                    errors.forEach(element => {
-                        // const elementValidate = document.querySelector(`error`)
+                    errors.forEach((element: any) => {
+                        const elementValidation = document.querySelector(`#error-${element.param}`) as HTMLSpanElement;
+
+                        elementValidation.innerHTML = element.msg;
                     });
                 }
                 console.log(error?.response?.data);
