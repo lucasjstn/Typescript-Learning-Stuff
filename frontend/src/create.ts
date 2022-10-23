@@ -16,6 +16,12 @@ function create() {
                 const { data } = await http.post("/user/create", this.user);
                 console.log(data);
             } catch (error) {
+                const errors = error.response?.data.errors;
+                if (errors) {
+                    errors.forEach(element => {
+                        // const elementValidate = document.querySelector(`error`)
+                    });
+                }
                 console.log(error?.response?.data);
             }
         },
