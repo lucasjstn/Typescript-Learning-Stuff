@@ -2,41 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Back e Front com Typescript</title>
 
-    <link rel="stylesheet" type="text/css" href="./assets/css/">
+    <link rel="stylesheet" type="text/css" href="./assets/css/" />
 </head>
 
 <body>
+
+    <div x-data="{
+        show: true,
+        create: function(){
+            this.show = !this.show;
+            console.log('aloos')
+        }
+    }">
+        <div x-show='show'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deserunt repudiandae provident harum possimus
+            voluptas nisi. Ullam vero eum culpa reprehenderit, ex laborum corporis placeat veritatis illo assumenda cum
+            saepe.
+        </div>
+        <button x-on:click="create">Create</button>
+    </div>
+
     <div id="container">
         <h2>hahahha live server</h2>
 
-        <button id="create">Create</button>
     </div>
-
-    <script>
-        const buttonCreate = document.querySelector("#create");
-
-        buttonCreate.addEventListener('click', async function () {
-            try {
-                const response = await fetch('http://localhost:3000/user/create', { method: 'post' })
-
-                console.log(await response.json());
-
-            } catch (error) {
-                console.log(error);
-            }
-
-
-
-        })
-    </script>
-
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+        integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="dist/index.js"></script>
 </body>
 
