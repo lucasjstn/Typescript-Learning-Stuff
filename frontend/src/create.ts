@@ -22,6 +22,10 @@ function create() {
                         const elementValidation = document.querySelector(`#error-${element.param}`) as HTMLSpanElement;
 
                         elementValidation.innerHTML = element.msg;
+
+                        setTimeout(() => {
+                            elementValidation.innerHTML = '';
+                        }, 3000);
                     });
                 }
                 console.log(error?.response?.data);
