@@ -1,4 +1,5 @@
 // import axios from "axios";
+import { errorValidateInterface } from "../interfaces/errorValidateInterface";
 import { userCreateInterface } from "../interfaces/userCreateInterface";
 import axiosInstance from "./helpers/http";
 import http from "./helpers/http";
@@ -20,8 +21,8 @@ function create(): userCreateInterface {
             } catch (error: any) {
                 const errors = error?.response?.data?.errors;
                 if (errors) {
-                    console.log(errors)
-                    errors.forEach((element: any) => {
+
+                    errors.forEach((element: errorValidateInterface) => {
                         const elementValidation = document.querySelector(`#error-${element.param}`) as HTMLSpanElement;
 
                         elementValidation.innerHTML = element.msg;
