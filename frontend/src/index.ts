@@ -1,5 +1,11 @@
-import { name } from "./create";
+import create from "./create";
+import "alpinejs";
+import { userCreateInterface } from "../interfaces/userCreateInterface";
 
-const names = "Lucsa";
+declare global {
+   interface Window {
+      create: () => userCreateInterface;
+   }
+}
 
-console.log(name);
+window.create = create;
